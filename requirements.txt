@@ -1,0 +1,5 @@
+pip
+fastapi[all]
+uvicorn[standard]
+starlette
+pugsql
