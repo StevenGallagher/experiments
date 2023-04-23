@@ -1,5 +1,8 @@
 pip
-fastapi[all]
-uvicorn[standard]
+fastapi
+uvicorn
+sqlalchemy
+databases
+pandas
 starlette
 pugsql
