@@ -28,6 +28,8 @@ async def read_item(product_id: int):
     elif len(records) < 1:
         # multiple records, raise 500 - internal error - contact administrator
         raise HTTPException(status_code=500, detail=f"Internal Error - product_id={product_id} is not unique, contact administrator")
+        # result = records
+        # result = records[0]
     else:
         # single record
         result = records[0]
