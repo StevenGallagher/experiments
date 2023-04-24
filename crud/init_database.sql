@@ -1,4 +1,11 @@
 -- create tables
+CREATE TABLE IF NOT EXISTS book (
+  [id] INTEGER PRIMARY KEY,
+  [title] TEXT,
+  [author] TEXT,
+  [publisher] TEXT
+);
+
 CREATE TABLE IF NOT EXISTS products (
   [product_id] INTEGER PRIMARY KEY,
   [product_name] TEXT
