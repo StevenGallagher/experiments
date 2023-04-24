@@ -29,7 +29,7 @@ class Book:
         records = df.to_dict('records')
         if len(records) == 0:
             # no matches - raise 404 - not found
-            raise HTTPException(status_code=404, detail="Product not found")
+            raise HTTPException(status_code=404, detail="Book id={id} not found")
         elif len(records) < 1:
             # multiple records, raise 500 - internal error - contact administrator
             raise HTTPException(status_code=500, detail=f"Internal Error, id={id} is not unique, contact administrator")
