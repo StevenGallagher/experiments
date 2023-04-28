@@ -7,6 +7,7 @@ import pandas as pd
 
 app = FastAPI()
 engine = create_engine('sqlite:///example.db')
+engine.execute('pragma journal_mode=wal;')
 
 
 @dataclass
